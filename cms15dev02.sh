@@ -5,8 +5,6 @@
 # GIT - https://github.com/FrancescooM/olimpiadicms-bash
 # Versione originale - https://github.com/melongist/CSL/tree/main/CMS
 
-cd
-
 if [[ $SUDO_USER ]] ; then
   echo "Utilizza solo 'bash cms15dev02.sh', senza SUDO"
   exit 1
