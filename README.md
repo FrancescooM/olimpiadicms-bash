@@ -8,11 +8,6 @@ Main Website [olimpiadi.francescomancuso.it](https://olimpiadi.francescomancuso.
 
 All credits to Bash configurations goes to [@melongist](https://github.com/melongist)
 
-#Official site       http://cms-dev.github.io/  
-#Official GitHub     https://github.com/cms-dev/cms  
-#Official DOCS       https://cms.readthedocs.io/en/latest/index.html  
-#Official Chat       https://gitter.im/cms-dev/cms  
-
 ## Pre-installation
 
 ### Support
