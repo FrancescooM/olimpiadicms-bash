@@ -27,7 +27,6 @@ done
 
 sudo sed -i "s#login password 'enternewpassword'#login password '$USERPW'#" ./db.txt
 sudo su - postgres < db.txt
-cd
 
 sudo sed -i "s#your_password_here#$USERPW#" /usr/local/etc/cms.conf
 sudo chown cmsuser:cmsuser /usr/local/etc/cms.conf
@@ -41,7 +40,6 @@ sudo chown cmsuser:cmsuser /usr/local/etc/cms.conf
 #sudo sed -i "s#commands.append(\[\"\/usr\/bin\/python3\"#commands.append(\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
 #sudo sed -i "s#return \[\[\"\/usr\/bin\/python3\"#return \[\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
 
-cd olimpiadicms
 sudo python3 setup.py install
 cd
 
