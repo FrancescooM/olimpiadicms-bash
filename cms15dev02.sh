@@ -12,7 +12,7 @@ if [[ $SUDO_USER ]] ; then
   exit 1
 fi
 
-cd olimpiadicms/
+cd olimpiadicms
 
 sudo pip3 install -r requirements.txt
 
