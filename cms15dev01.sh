@@ -109,5 +109,5 @@ do
 done
 echo "Riavvio..."
 sleep 5
-sudo reboot
+#sudo reboot
 
