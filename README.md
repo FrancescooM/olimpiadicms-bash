@@ -15,7 +15,7 @@ All credits to Bash configurations goes to [@melongist](https://github.com/melon
 | System | Support |
 | :--- | :---: |
 | Ubuntu 20.04 | ✅ |
-| Ubuntu 22.04 | Not tested yet |
+| Ubuntu 22.04 | ❌ |
 
 
 | Server | Support |
