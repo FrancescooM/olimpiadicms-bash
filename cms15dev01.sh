@@ -12,7 +12,6 @@ fi
 
 cd
 
-#for South Korea's timezone
 sudo timedatectl set-timezone 'Europe/Rome'
 
 sudo apt update
