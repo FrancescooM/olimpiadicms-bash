@@ -42,11 +42,7 @@ sudo sed -i "s#return \"Python 3 \/ CPython\"#return \"Python 3 \/ PyPy3\"#g" ~/
 sudo sed -i "s#commands.append(\[\"\/usr\/bin\/python3\"#commands.append(\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
 sudo sed -i "s#return \[\[\"\/usr\/bin\/python3\"#return \[\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
 
-
-cd
-cd olimpiadi-bash
-cd olimpiadicms
-sudo python3 setup.py install
+sudo python3 ~/olimpiadicms-bash/olimpiadicms/setup.py install
 cd
 
 cmsInitDB
