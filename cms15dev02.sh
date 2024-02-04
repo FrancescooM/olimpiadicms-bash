@@ -10,6 +10,8 @@ if [[ $SUDO_USER ]] ; then
   exit 1
 fi
 
+cd ~/
+cd olimpiadicms-bash
 cd olimpiadicms
 
 sudo pip3 install -r requirements.txt
@@ -32,14 +34,16 @@ sudo sed -i "s#your_password_here#$USERPW#" /usr/local/etc/cms.conf
 sudo chown cmsuser:cmsuser /usr/local/etc/cms.conf
 
 #for PyPy3
-#sudo sed -i "s#Python3CPython\",#Python3CPython\",\n            \"Python 3 / PyPy3=cms.grading.languages.python3_pypy3:Python3PyPy3\",#g" ~/olimpiadicms-bash/olimpiadicms/setup.py
-#sudo cp -f ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_cpython.py ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
-#sudo sed -i "s#__all__ = \[\"Python3CPython\"\]#__all__ = \[\"Python3PyPy3\"\]#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
-#sudo sed -i "s#class Python3CPython(CompiledLanguage):#class Python3PyPy3(CompiledLanguage):#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
-#sudo sed -i "s#return \"Python 3 \/ CPython\"#return \"Python 3 \/ PyPy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
-#sudo sed -i "s#commands.append(\[\"\/usr\/bin\/python3\"#commands.append(\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
-#sudo sed -i "s#return \[\[\"\/usr\/bin\/python3\"#return \[\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#Python3CPython\",#Python3CPython\",\n            \"Python 3 / PyPy3=cms.grading.languages.python3_pypy3:Python3PyPy3\",#g" ~/olimpiadicms-bash/olimpiadicms/setup.py
+sudo cp -f ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_cpython.py ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#__all__ = \[\"Python3CPython\"\]#__all__ = \[\"Python3PyPy3\"\]#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#class Python3CPython(CompiledLanguage):#class Python3PyPy3(CompiledLanguage):#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#return \"Python 3 \/ CPython\"#return \"Python 3 \/ PyPy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#commands.append(\[\"\/usr\/bin\/python3\"#commands.append(\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
+sudo sed -i "s#return \[\[\"\/usr\/bin\/python3\"#return \[\[\"\/usr\/bin\/pypy3\"#g" ~/olimpiadicms-bash/olimpiadicms/grading/languages/python3_pypy3.py
 
+cd ~/
+cd olimpiadicms-bash
 sudo python3 setup.py install
 cd
 
