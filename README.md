@@ -48,7 +48,7 @@ sudo apt install git
 cd /home/USER/ # your username
 ```
 ```bash
-git clone https://github.com/FrancescooM/olimpiadicms-bash.git
+git clone --recurse-submodules https://github.com/FrancescooM/olimpiadicms-bash.git
 ```
 
 ### 2. Run first bash file (CMS prerequisites)
