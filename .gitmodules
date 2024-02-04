@@ -1,0 +1,3 @@
+[submodule "olimpiadicms"]
+	path = olimpiadicms
+	url = https://github.com/FrancescooM/olimpiadicms.git
