@@ -46,6 +46,8 @@ sudo apt install git
 
 ```bash
 cd /home/USER/ # your username
+```
+```bash
 git clone https://github.com/FrancescooM/olimpiadicms-bash.git
 ```
 
@@ -53,6 +55,8 @@ git clone https://github.com/FrancescooM/olimpiadicms-bash.git
 
 ```bash
 cd olimpiadicms-bash/
+```
+```bash
 bash cms15dev01.sh
 ```
 
@@ -60,8 +64,11 @@ bash cms15dev01.sh
 
 ```bash
 cd /home/USER/olimpiadicms-bash/ # your username
+```
+```bash
 bash cms15dev02.sh
 ```
+
 CMS installed!
  
 ## Post-installation
@@ -69,9 +76,9 @@ CMS installed!
 - Open SSH, HTTP, HTTPS, TCP 8888, TCP 8889, TCP 8890 ports
 
 - CMS default links:
-    Contest Area - http://localhost:8888
-    Admin Login - http://localhost:8889
-    Ranking - http://localhost:8890
+    - Contest Area - http://localhost:8888
+    - Admin Login - http://localhost:8889
+    - Ranking - http://localhost:8890
 
 - Use the following commands to create a contest and run the CMS services
 
@@ -92,7 +99,11 @@ Then shutdown the cmsAdminWebServer service with CTRL+C command to run all the C
 Command to run in order to run all the services (use "screen" to manage multiple services):
 ```bash
 cmsLogService  #for log
+```
+```bash
 cmsRankingWebServer  #Ranking
+```
+```bash
 cmsResourceService -a #Select the contest number, then press Enter
 ```
 
