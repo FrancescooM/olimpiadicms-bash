@@ -16,7 +16,7 @@ cd olimpiadicms
 
 sudo pip3 install -r requirements.txt
 
-wget https://raw.githubusercontent.com/melongist/CSL/master/CMS/db.txt
+wget https://raw.githubusercontent.com/FrancescooM/olimpiadicms-bash/main/db.txt
 
 USERPW="o"
 INPUTS="x"
