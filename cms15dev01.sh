@@ -87,7 +87,8 @@ sudo apt install -y python3-sphinx
 sudo apt install -y python3-cups
 sudo apt install -y python3-pypdf2
 
-
+cd ~/
+cd olimpiadicms-bash
 cd olimpiadicms
 #select 'Y' at the end...  
 sudo python3 prerequisites.py install
