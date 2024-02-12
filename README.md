@@ -17,13 +17,6 @@ All credits to Bash configurations goes to [@melongist](https://github.com/melon
 | Ubuntu 20.04 | ✅ |
 | Ubuntu 22.04 | ❌ |
 
-
-| Server | Support |
-| :--- | :---: |
-| AWS | ✅ |
-| Cloud.it | ✅ |
-| Oracle | ✅ |
-
 ### Requirement
 
 - 4 GB RAM
